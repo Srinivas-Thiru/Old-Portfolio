@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  scroll-behavior: smooth;
+
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+::selection {
+  color: #000;
+  background: #0C9488;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+
+  box-sizing: border-box;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --white: #FFFFFF;
+  --greyDark: #9baacf;
+}
+
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}
+/* 
+.nav{
+  position: absolute;
+  left: 0;
+  justify-items: right;
+  align-items: end;
+  padding-left: 50vw;
+  width: 100vw;
+  background-color: #111827;
+  z-index: 1000;
+} */
+
+ /* box-shadow:  inset 0.1rem 0.1rem 0.4rem var(--white), inset -0.1rem -0.1rem 0.4rem var(--white); */
+/* 
+.nav ul li a:hover,
+.nav ul li a#menu-home {
+    color: #0C9488;;
+   
+}
+.nav ul {
+  width: 100vw;
+  padding: 50px;
+  color:#0C9488;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: right;
+  padding: 0.7rem 0;
+}
+.nav ul li {
+  margin: 0 1rem;
+  list-style: none;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: var(--greyDark);
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 0.4rem;
+  padding: .3rem .7rem;
+}
+ */
+
+
+
+/* 
+.name{
+  font-size: 2rem;
+  line-height: 1.3;
+  white-space: nowrap;
+  max-width: 360px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-right: .15em solid transparent;
+  animation: typing 3s steps(20, end), blink-caret .3s step-end 10;
+}
+@keyframes typing {
+  from { width: 0 }
+  to  { width: 7% }
+  to  { width: 36% }
+  to  { width: 64% }
+  to  { width: 93% }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: #0C9488; }
+  50% { border-color: transparent }
+} */
+
+
+
+
+
+
+.social-btn {
+  display: flex;
+  flex-flow: row;
+  width: 150px;
+  align-items: center;
+  justify-content: space-between;
+  overflow:hidden;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-bottom: 5px;
+  position: relative;
+  top:35vh;
+  left: -145px;
+  transition: left 1s;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    display: none;
+  }
+  
+  .social-btn {
+    left: -313px;
+  }
+  .social-btn:hover {
+    left: -218px;
+    transition: left 1s;
+  }
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+  .nav {
+    display: none;
+  }
+  .social-btn {
+    left: -185px;
+  }
+  .social-btn:hover {
+    left: -85px;
+    transition: left 1s;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+.nav ul{
+  display: none;
+}
+  .social-btn:hover {
+    left: -40px;
+    transition: left 1s;
+  }
+  
+}
+
+
+
+
+.social {
+  position: fixed;
+  top: 50px;
+  transform: translateY(-40%);
+}
+.social a {
+  text-decoration: none;
+}
+
+.color-telegram {
+  background-color: #0084c6;
+}
+.color-instagram {
+  background-color: #000000;
+}
+.color-whatsapp {
+  background-color: #ffffff;
+}
+
+.google-font {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+}
+
+.social-btn img {
+  width: 40px;
+}
+
+.social-btn p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.icons8-telegram-app {
+  order: 2;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("../public/linkedin\ logo.png") 50%
+    50% no-repeat;
+  background-size: 100%;
+}
+
+.icons8-instagram {
+  order: 2;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("../public/github\ logo.png")
+    50% 50% no-repeat;
+  background-size: 100%;
+}
+
+.icons8-whatsapp {
+  order: 2;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  background: url("../public/pdf\ logo.png")
+    50% 50% no-repeat;
+  background-size: 100%;
+}
+
+.section-title{
+  background-image: url("../public/bg-teal.png");
+  
+  
+}
+
+
+#contact {
+  margin-top: auto;
+}
