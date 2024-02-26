@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predeploy": "npm un build",
+    "predeploy": "npm run build",
     "deploy": "npm run deploy",
     "dev": "next dev",
     "build": "next build",
