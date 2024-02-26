@@ -1,8 +1,11 @@
 {
+  "homepage": "https://Srinivas-Thiru.github.io/",
   "name": "rectify",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm un build",
+    "deploy": "npm run deploy",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -20,6 +23,7 @@
     "autoprefixer": "^10.4.12",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
   }
