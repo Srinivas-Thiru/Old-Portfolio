@@ -19,11 +19,50 @@ import project1 from "../public/project1.png"
 import project2 from "../public/project2.png"
 import project3 from "../public/project3.png"
 import BsFillMoonStarsFill from  'react-icons/bs'
-
+import { useEffect } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+  const [isVisibleWork, setIsVisibleWork] = useState(false);
 
+    
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisibleWork(true);
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjust threshold as needed
+    );
+
+    observer.observe(document.querySelector('.work-section'));
+
+    return () => observer.disconnect();
+  }, []);
+
+    
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjust threshold as needed
+    );
+
+    observer.observe(document.querySelector('.container'));
+
+    return () => observer.disconnect();
+  }, []);
   
 
   return (
@@ -103,6 +142,12 @@ export default function Home() {
             <h2 className="name  text-4xl py-2 text-teal-600 font-burtons dark:text-teal-400 md:text-6xl">
               Srinivas Thiru
             </h2>
+
+            {/* <div className="typing-container">
+          <div className="container">
+            <div className="  md:text-3xl dark:text-white typewriter">A Software Engineer</div>
+          </div>
+        </div> */}
             <h3 className="text-xl py-2 dark:text-white md:text-3xl">
               A Software Engineer.
             </h3>
@@ -171,12 +216,12 @@ export default function Home() {
               <div id="Work" className="min-h-screen pt-10">
                 
           <h1 className="font-burtons section-title text-gray-800 dark:text-gray-200 text-xl"> Work</h1>
-            <div className="work-section  flex flex-col md:flex-row text-gray-800 dark:text-gray-200 mt-2" >
+            <div className={`work-section  flex flex-col md:flex-row text-gray-800 dark:text-gray-200 mt-2`} >
 
               <div className="image my-auto">
               <Image className="mx-auto" src={homeicons} width={500} height={500}  />
               </div>
-              <div className="content p-0 md:p-10 my-auto md:ml-0 w-100">
+              <div className={` work-section ${isVisibleWork ? " opacity-100 animate-slideLeft" : "opacity-0"}  content p-0 md:p-10 my-auto md:ml-0 w-100`} >
                 <div className="work-card py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none my-4 ">
                 <div className="flex m-2 px-2">
                   <Image className="rounded-lg" src={work1} width={150} height={150} />
@@ -274,7 +319,17 @@ export default function Home() {
                 </div> */}
 
 
-                <div className="work-card animate-slideRight py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10 mt-5 ">
+
+
+
+
+
+
+
+
+<div className={`container ${isVisible ? ' opacity-100 animate-slideRight' : ' opacity-0'}`}>
+
+                <div className="work-card py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10 mt-5 ">
                 <div className="flex m-2 px-2">
                   <Image src={project1} width={200} height={100} className=" shadow-teal-400 border shadow-lg" />
                   
@@ -301,9 +356,10 @@ export default function Home() {
 
                   </div>
                 </div>
+</div>
 
 
-
+<div className={`container ${isVisible ? ' opacity-100 animate-slideLeft' : ' opacity-0'}`}>
                 <div className="work-card py-2 border-b-2 border-gray-300  hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10 my-5 ">
                 <div className="flex m-2 px-2">
                   <Image src={project2} width={200} height={100} />
@@ -325,7 +381,9 @@ export default function Home() {
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Web Scrapping</span>
                   </div>
                 </div>
-                  
+                </div>
+
+                <div className={`container ${isVisible ? ' opacity-100 animate-slideRight' : ' opacity-0'}`}>
                 <div className="work-card py-2 border-b-2 border-gray-300  hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10  ">
                 <div className="flex m-2 px-2">
                   <Image src={project3} width={200} height={100} />
@@ -345,6 +403,7 @@ export default function Home() {
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Tailwind CSS</span>
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">UI/UX</span>
                   </div>
+                </div>
                 </div>
 
               </div>

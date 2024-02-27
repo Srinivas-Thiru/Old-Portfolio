@@ -139,7 +139,37 @@ a {
   margin: 0;
 }
 
+.typing-container .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: clamp(2rem, 2.8vw, 5rem);
+  font-weight: bold;
+}
 
+.typing-container .container .typewriter {
+	width: 21.5ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 4px solid #212121;
+	animation: cursor 1s step-start infinite, 
+    text 6s steps(20) alternate infinite;
+}
+
+@keyframes cursor {
+	0%, 100% { 
+    border-color: #0C9488; 
+  }
+}
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width: 19ch; 
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .nav {
@@ -186,6 +216,11 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+
+   .vertical-timeline {
+    width: 95% !important;
+    max-width: 95% ;
+}
   .social-logo {
     height: 30px;
     width: 30px;
@@ -349,3 +384,140 @@ width: auto;
 }
 
 
+
+@media only screen and (min-width: 1170px){
+  .vertical-timeline.vertical-timeline--two-columns {
+    width: 90%;
+}
+}
+
+.vertical-timeline {
+  width: 900px!important;
+}
+
+.vertical-timeline {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 2em 0;
+  position: relative;
+  width: 95%;
+}
+
+@media only screen and (max-width: 600px){
+.vertical-timeline {
+    width: 300px!important;
+}
+}
+
+@media only screen and (max-width: 1169px){
+.vertical-timeline {
+    width: 560px!important;
+}
+}
+
+.vertical-timeline {
+    width: 900px!important;
+}
+.vertical-timeline {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 2em 0;
+    position: relative;
+    width: 95%;
+}
+
+@media only screen and (min-width: 1170px){
+.vertical-timeline.vertical-timeline--two-columns:before {
+    left: 50%;
+    margin-left: -2px;
+    /* background: #22f755; */
+}
+}
+
+
+.vertical-timeline:before {
+  background: #22f755 !important;
+  content: "";
+  height: 100%;
+  left: 18px;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-content .bounce-in {
+  -webkit-animation: cd-bounce-2 .6s;
+  animation: cd-bounce-2 .6s;
+  visibility: visible;
+}
+
+@media only screen and (min-width: 1170px){
+.vertical-timeline--two-columns .vertical-timeline-element-content {
+    margin-left: 0;
+    padding: 1.5em;
+    width: 44%;
+}
+}
+
+.vertical-timeline-element>div {
+  min-height: 1px;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%);
+}
+
+.vertical-timeline-element-content {
+  color: #000;
+  background: #fff;
+  border-radius: 0.25em;
+  -webkit-box-shadow: 0 3px 0 #ddd;
+  box-shadow: 0 3px 0 #ddd;
+  margin-left: 60px;
+  padding: 1em;
+  position: relative;
+}
+
+@media only screen and (min-width: 1170px){
+.vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+    font-size: 16px;
+    font-size: 1rem;
+    left: 124%;
+    position: absolute;
+    top: 6px;
+    width: 100%;
+    color: beige;
+}
+}
+
+@media only screen and (min-width: 768px){
+.vertical-timeline-element-content .vertical-timeline-element-date {
+    font-size: 14px;
+    font-size: .875rem;
+}}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  float: left;
+  opacity: .7;
+  padding: 0.8em 0;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  display: inline-block;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date, .vertical-timeline-element-content p {
+  font-size: 13px;
+  font-size: .8125rem;
+  font-weight: 500;
+}
+.vertical-timeline-element-date {
+  font-size: 200px;
+  margin: 20px;
+  padding: 200px;
+}
+.vertical-timeline * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
