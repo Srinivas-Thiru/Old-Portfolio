@@ -99,14 +99,14 @@ export default function Home() {
 
 
           <div className="text-center p-10 py-10">
-            <h2 className="name  text-5xl py-2 text-teal-600 font-burtons dark:text-teal-400 md:text-6xl">
+            <h2 className="name  text-4xl py-2 text-teal-600 font-burtons dark:text-teal-400 md:text-6xl">
               Srinivas Thiru
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               A Software Engineer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              An Experienced Software Engineer with a Masters in CS, expertise in diverse technical skills and development skills.
+              An Experienced Software Engineer with a Masters in CS and expertise in diverse technologies.
             </p>
             </div>
             <div>
