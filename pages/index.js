@@ -197,7 +197,7 @@ export default function Home() {
                 <AiOutlineMail />
               </a>
             </div>
-            <div className=" animate-fadeIn mx-auto bg-gradient-to-b from-teal-500 bitmoj-bg  rounded-full  relative overflow-hidden mt-20 ">
+            <div className=" animate-wipeUp mx-auto bg-gradient-to-b from-teal-500 bitmoj-bg  rounded-full  relative overflow-hidden mt-20 ">
               
               <Image src={deved} className=" bitmoj duration-300 ease-in" layout="fill" objectFit="cover" />
             </div>
@@ -213,15 +213,15 @@ export default function Home() {
         
       
         
-              <div id="Work" className="min-h-screen pt-10">
+              <div id="Work" className="min-h-screen ">
                 
           <h1 className="font-burtons section-title text-gray-800 dark:text-gray-200 text-xl"> Work</h1>
-            <div className={`work-section  flex flex-col md:flex-row text-gray-800 dark:text-gray-200 mt-2`} >
+            <div className={`work-section overflow-hidden flex flex-col md:flex-row text-gray-800 dark:text-gray-200 mt-2`} >
 
               <div className="image my-auto">
-              <Image className="mx-auto" src={homeicons} width={500} height={500}  />
+              <Image className={`mx-auto ${isVisibleWork ? " opacity-100 animate-slideRight" : "opacity-0"}`} src={homeicons} width={500} height={500}  />
               </div>
-              <div className={` work-section ${isVisibleWork ? " opacity-100 animate-slideLeft" : "opacity-0"}  content p-0 md:p-10 my-auto md:ml-0 w-100`} >
+              <div className={` work-section ${isVisibleWork ? " duration-500 opacity-100 animate-slideLeft" : "opacity-0"}  content p-0 md:p-10 my-auto md:ml-0 w-100`} >
                 <div className="work-card py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none my-4 ">
                 <div className="flex m-2 px-2">
                   <Image className="rounded-lg" src={work1} width={150} height={150} />
@@ -239,7 +239,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="content">
-                <div className="work-card py-2  border-b-2 border-gray-300  hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none my-4 mt-14 ">
+                <div className={`work-card py-2 ${isVisibleWork ? " duration-1000 opacity-100 animate-slideLeft" : "opacity-0"} border-b-2 border-gray-300  hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none my-4 mt-14` }>
                 <div className="flex m-2 px-2">
                 <Image className="rounded-lg" src={work2} width={150} height={150} />
 
@@ -274,7 +274,7 @@ export default function Home() {
             <div id="Projects" className="min-h-screen pt-10 text-gray-800 dark:text-gray-200">
               <h1 className="font-burtons section-title mb-4  text-gray-800 dark:text-gray-200 text-xl ">Thigns I've developed</h1>
               
-              <div className="content p-0 md:flex-row my-auto md:ml-0 w-90md:w-[60vw] ">
+              <div className="content overflow-hidden p-0 md:flex-row my-auto md:ml-0 w-90md:w-[60vw] ">
 
 
 {/* 
