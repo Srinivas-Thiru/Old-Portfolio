@@ -25,6 +25,11 @@ import arrow from "../public/arrow.png"
 import project1 from "../public/project1.png"
 import project2 from "../public/project2.png"
 import project3 from "../public/project3.png"
+import linkedinLogo from "../public/linkedin-logo.png"
+import githubLogo from "../public/github-logo.png"
+import pdfLogoLight from "../public/pdf-logo-light.png"
+import mailLogo from "../public/mail-logo.png"
+
 
 
 
@@ -112,13 +117,16 @@ export default function Home() {
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               An Experienced Software Engineer with a Masters in CS, expertise in diverse technical skills and development skills.
             </p>
-            <div className="text-5xl flex  justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+            </div>
+            <div>
+            <div className="text-5xl flex flex-wrap  justify-center gap-3 md:gap-8 lg:gap-16 py-3 text-gray-600 dark:text-gray-400">
 
               <a 
-              className="hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
+              className=" social-icon  hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
                 target="_blank"
                 href="https://www.linkedin.com/in/srinivas-thiru/"
               >
+                
                 <AiFillLinkedin />
               </a>
               
@@ -128,26 +136,35 @@ export default function Home() {
               </div> */}
 
               <a
-              className="hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
+              className=" social-icon   hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
               target="_blank"
               href="https://github.com/Srinivas-Thiru/">
-                <AiFillGithub  />
+                
+                <AiFillGithub />
+                <div className=".icons8-instagram">
+
+                </div>
               </a>
               <a
-              className="hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
+              className=" social-icon  hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
 
               target="_blank"
-              href="https://drive.google.com/file/d/1LDZp-rTLuor-2UZVVLtbHElAqMYC2MnO/view?usp=sharing"><AiFillFilePdf /></a>
+              href="https://drive.google.com/file/d/1LDZp-rTLuor-2UZVVLtbHElAqMYC2MnO/view?usp=sharing">
+                
+                <AiFillFilePdf/>
+              </a>
               <a
-              className="hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
+              className=" social-icon  hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
               target="_blank"
               href="mailto:sri.thiru.cs@gmail.com">
                 <AiOutlineMail />
               </a>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500  rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} className="animate-fadeIn duration-300 ease-in" layout="fill" objectFit="cover" />
+            <div className="mx-auto bg-gradient-to-b from-teal-500 bitmoj-bg  rounded-full  relative overflow-hidden mt-20 ">
+              
+              <Image src={deved} className="animate-fadeIn bitmoj duration-300 ease-in" layout="fill" objectFit="cover" />
             </div>
+
           </div>
         </section>
         
@@ -171,15 +188,15 @@ export default function Home() {
               <div className="image my-auto">
               <Image className="mx-auto" src={homeicons} width={500} height={500}  />
               </div>
-              <div className="content p-10 my-auto md:ml-0 w-100">
-                <div className="work-card py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg px-5 rounded-lg rounded-r-none my-4 ">
+              <div className="content p-0 md:p-10 my-auto md:ml-0 w-100">
+                <div className="work-card py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none my-4 ">
                 <div className="flex m-2 px-2">
                   <Image className="rounded-lg" src={work1} width={150} height={150} />
-                  <div className="ml-10">
+                  <div className="ml-3 md:ml-10">
                   <h1>Software Engineer</h1>
                   <h2 className=" text-gray-400 border-gray-400  border-l-2 pl-3 mt-3">Influexer</h2></div>
                   </div>
-                  <div className="flex flex-wrap m-2 p-2">
+                  <div className="skills flex flex-wrap m-2 p-2">
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">NextJs</span>
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">TypeScript</span>
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">PostgreSQL</span>
@@ -189,15 +206,15 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="content">
-                <div className="work-card py-2  border-b-2 border-gray-300  hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg px-5 rounded-lg rounded-r-none my-4 mt-14 ">
+                <div className="work-card py-2  border-b-2 border-gray-300  hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none my-4 mt-14 ">
                 <div className="flex m-2 px-2">
                 <Image className="rounded-lg" src={work2} width={150} height={150} />
 
-                  <div  className="ml-10">
+                  <div  className="ml-3 md:ml-10">
                   <h1>Graduate Teaching Assistant</h1>
                   <h2 className=" text-gray-400 border-gray-400  border-l-2 pl-3 mt-3"> Sacred Heart University.</h2></div>
                   </div>
-                  <div className=" flex flex-wrap m-2 p-2">
+                  <div className=" skills flex flex-wrap m-2 p-2">
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Python</span>
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">guided 40+ Grad-level students</span>
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Educational Leadership</span>
@@ -224,11 +241,11 @@ export default function Home() {
             <div id="Projects" className="min-h-screen pt-10 text-gray-800 dark:text-gray-200">
               <h1 className="font-burtons section-title  text-gray-800 dark:text-gray-200 text-xl ">Thigns I've developed</h1>
               
-              <div className="content p-10 md:flex-row my-auto md:ml-0 w-100 md:w-[80vw] md:p-2">
-                <div className="work-card py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg px-5 rounded-lg rounded-r-none mx-10 mt-5 ">
+              <div className="content p-0 md:flex-row my-auto md:ml-0 w-90md:w-[60vw] ">
+                <div className="work-card py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10 mt-5 ">
                 <div className="flex m-2 px-2">
                   <Image src={project1} width={200} height={100} className=" shadow-teal-400 border shadow-lg" />
-                  <div className="ml-10">
+                  <div className="ml-3 md:ml-10">
                   <h1>Organizo</h1>
                   <h2 className=" text-gray-400 border-gray-400  border-l-2 pl-3 mt-3">A Project Management Tool</h2>
                   
@@ -241,7 +258,7 @@ export default function Home() {
                     </a>
                     </div>
                   </div>
-                  <div className=" flex flex-wrap m-2 p-2">
+                  <div className=" skills flex flex-wrap m-2 p-2">
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">React</span>
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">JavaScript</span>
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">MonogDB</span>
@@ -251,12 +268,32 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="work-card py-2 border-b-2 border-gray-300  hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg px-5 rounded-lg rounded-r-none mx-10 my-5 ">
+
+                {/* 
+                <div className="work-card py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none my-4 ">
+    <div className="flex flex-col m-2 px-2"> <!-- Change flex to flex-col -->
+        <Image className="rounded-lg" src={work1} width={150} height={150} />
+        <div className="ml-0 mt-2"> <!-- Adjust margin -->
+            <h1>Software Engineer</h1>
+            <h2 className="text-gray-400 border-gray-400 border-l-2 pl-3 mt-3">Influexer</h2>
+        </div>
+        <div className="flex flex-wrap m-2 p-2 justify-center"> <!-- Add justify-center to center content -->
+            <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">NextJs</span>
+            <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">TypeScript</span>
+            <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">PostgreSQL</span>
+            <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">GraphQL</span>
+            <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">React</span>
+        </div>
+    </div>
+</div>
+ */}
+
+                <div className="work-card py-2 border-b-2 border-gray-300  hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10 my-5 ">
                 <div className="flex m-2 px-2">
                   <Image src={project2} width={200} height={100} />
-                  <div className="ml-10 ">
+                  <div className="ml-3 md:ml-10 ">
                   <h1>LinkedIn Automation Script</h1>
-                  <h2 className=" text-gray-400 border-gray-400  border-l-2 pl-3 mt-3">A Python Script that sends connection request <br /> with personalised message to a specificn search query! </h2></div>
+                  <h2 className=" text-gray-400 border-gray-400  border-l-2 pl-3 mt-3"> An Automation Script</h2></div>
                   <div className="ml-auto">
                     <a 
                     target="_blank"
@@ -266,19 +303,19 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className=" flex flex-wrap m-2 p-2">
+                  <div className=" skills flex flex-wrap m-2 p-2">
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Python</span>
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">guided 40+ Grad-level students</span>
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Educational Leadership</span>
                   </div>
                 </div>
                   
-                <div className="work-card py-2 border-b-2 border-gray-300  hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg px-5 rounded-lg rounded-r-none mx-10  ">
+                <div className="work-card py-2 border-b-2 border-gray-300  hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10  ">
                 <div className="flex m-2 px-2">
                   <Image src={project3} width={200} height={100} />
-                  <div className="ml-10">
+                  <div className="ml-3 md:ml-10">
                   <h1>My Portfolio</h1>
-                  <h2 className=" text-gray-400 border-gray-400  border-l-2 pl-3 mt-3"> Checkout the Source code for this Project!</h2></div>
+                  <h2 className=" text-gray-400 border-gray-400  border-l-2 pl-3 mt-3"> This site!</h2></div>
                   <div className="ml-auto">
                     <a 
                     target="_blank"
@@ -287,7 +324,7 @@ export default function Home() {
                     </a>
                     </div>
                   </div>
-                  <div className="flex flex-wrap m-2 p-2">
+                  <div className="skills flex flex-wrap m-2 p-2">
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">NextJs</span>
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Tailwind CSS</span>
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">UI/UX</span>
@@ -337,9 +374,9 @@ export default function Home() {
 
               <div id="contact" className=" text-gray-800 dark:text-gray-200 ">
                 <h1 className="font-burtons text-center  text-gray-800 dark:text-gray-200 text-xl mt-10 mb-5">Wanna  get in touch?</h1>
-                <div className="text-5xl flex justify-center gap-16 pb-10 text-gray-600 dark:text-gray-400">
+                <div className="text-5xl flex justify-center gap-3 md:gap-8 lg:gap-16  pb-10 text-gray-600 dark:text-gray-400">
               <a 
-              className="hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
+              className=" social-icon hover:scale-105 flex duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
                 target="_blank"
                 href="https://www.linkedin.com/in/srinivas-thiru/"
               >
@@ -347,18 +384,18 @@ export default function Home() {
               </a>
               
               <a
-              className="hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
+              className=" social-icon hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
               target="_blank"
               href="https://github.com/Srinivas-Thiru/">
                 <AiFillGithub  />
               </a>
               <a
-              className="hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
+              className=" social-icon hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
               target="_blank"
               href="https://drive.google.com/file/d/1LDZp-rTLuor-2UZVVLtbHElAqMYC2MnO/view?usp=sharing"><AiFillFilePdf /></a>
 
             <a
-              className="hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
+              className=" social-icon hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
               target="_blank"
               href="mailto:sri.thiru.cs@gmail.com">
                 <AiOutlineMail />

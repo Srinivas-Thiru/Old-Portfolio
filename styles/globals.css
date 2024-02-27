@@ -131,6 +131,17 @@ a {
   transition: left 1s;
 }
 
+
+.social-logo {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
 @media screen and (min-width: 1024px) {
   .nav {
     display: none;
@@ -148,6 +159,15 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
  
+  .bitmoj {
+    width: 30vw;
+    height: 30vw;
+  }
+  
+  .bitmoj-bg {
+    width: 30vw;
+    height: 30vw;
+  }
   .nav {
     display: none;
   }
@@ -162,6 +182,14 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .social-logo {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  
+
   .nav {
     display: none;
   }
@@ -216,7 +244,7 @@ a {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: url("../public/linkedin\ logo.png") 50%
+  background: url("../public/linkedin-logo.png") 50%
     50% no-repeat;
   background-size: 100%;
 }
@@ -226,7 +254,7 @@ a {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: url("../public/github\ logo.png")
+  background: url("../public/github-logo.png")
     50% 50% no-repeat;
   background-size: 100%;
 }
@@ -236,7 +264,7 @@ a {
   display: inline-block;
   width: 38px;
   height: 38px;
-  background: url("../public/pdf\ logo.png")
+  background: url("../public/pdf-logo.png")
     50% 50% no-repeat;
   background-size: 100%;
 }
@@ -251,3 +279,57 @@ a {
 #contact {
   margin-top: auto;
 }
+
+.bitmoj {
+  width: max(120px, 15vw);
+  height: max(120px, 15vw);
+}
+
+.bitmoj-bg {
+  width: max(120px, 15vw);
+  height: max(120px, 15vw);
+}
+
+.social-icon {
+width: auto;
+
+}
+
+
+
+
+/* div className="content p-0 md:p-10  md:flex-row my-auto md:ml-0 w-100 md:w-[80vw]"> 
+*/
+
+
+
+
+@media (max-width: 768px) {
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .work-card {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+  }
+
+  .work-card  {
+      flex-direction: column;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .work-card .image-container {
+      /* Optional: Adjust image width, height, or margin as needed for mobile */
+      width: 100%; /* Example: Scale image to full width */
+  }
+}
+
+
