@@ -18,7 +18,7 @@ import arrow from "../public/arrow.png"
 import project1 from "../public/project1.png"
 import project2 from "../public/project2.png"
 import project3 from "../public/project3.png"
-
+import BsFillMoonStarsFill from  'react-icons/bs'
 
 
 export default function Home() {
@@ -35,6 +35,7 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-52">
         <section className="min-h-screen z-10">
+     
           {/* <div className="nav flex fixed rounded-full rounded-t-none  ">
                     <ul className="menu">
                       <li>  <BsFillMoonStarsFill
@@ -226,7 +227,7 @@ export default function Home() {
 
               
             <div id="Projects" className="min-h-screen pt-10 text-gray-800 dark:text-gray-200">
-              <h1 className="font-burtons section-title  text-gray-800 dark:text-gray-200 text-xl ">Thigns I've developed</h1>
+              <h1 className="font-burtons section-title mb-4  text-gray-800 dark:text-gray-200 text-xl ">Thigns I've developed</h1>
               
               <div className="content p-0 md:flex-row my-auto md:ml-0 w-90md:w-[60vw] ">
 

@@ -146,6 +146,11 @@ a {
     display: none;
   }
   
+
+.section-title{
+  font-size: 30px;
+}
+
   .social-btn {
     left: -313px;
   }
@@ -284,10 +289,6 @@ a {
   background: url("../public/pdf-logo.png")
     50% 50% no-repeat;
   background-size: 100%;
-}
-
-.section-title{
-  background-image: url("../public/bg-teal.png"); 
 }
 
 
