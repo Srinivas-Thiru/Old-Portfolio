@@ -360,7 +360,7 @@ export default function Home() {
                 <div className="section-title"></div>
 
               <div id="Recommendations" className=" pt-5">
-              <h1 className="font-burtons section-title text-gray-800 dark:text-gray-200 text-xl my-5">What people think about me?</h1>
+              <h1 className="font-burtons section-title text-gray-800 dark:text-gray-200 text-xl my-5">Hear it from them</h1>
                 <div className="flex flex-col lg:flex-row gap-4 mx-auto justify-between my-6 py-6 ">
                 <a 
                 className=" hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg"
