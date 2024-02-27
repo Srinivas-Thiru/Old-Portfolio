@@ -242,9 +242,66 @@ export default function Home() {
               <h1 className="font-burtons section-title  text-gray-800 dark:text-gray-200 text-xl ">Thigns I've developed</h1>
               
               <div className="content p-0 md:flex-row my-auto md:ml-0 w-90md:w-[60vw] ">
+
+{/* 
+              <div className="work-card py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10 mt-5 ">
+                
+
+                <div className="box-1 grid md:grid-cols-2"> 
+                  <div className="project-img mx-auto md:mx-3">
+                  <Image src={project1} width={200} height={100} className=" shadow-teal-400 border shadow-lg" />
+                  </div>
+                  <div className="project-info flex justify-between mx-3 mt-3">
+                    <div>
+                      <h1>Organizo</h1>
+                      <h2 className=" text-gray-400 border-gray-400  border-l-2 pl-3 mt-3">A Project Management Tool</h2>
+                    </div>
+                    <div>
+                      <a 
+                      target="_blank"
+                      href="https://github.com/Srinivas-Thiru/Organizo">
+                      <Image className="hover:scale-110 duration-300 ease-in-out cursor-pointer hover:drop-shadow-[0_3px_8px_rgba(12,148,136,1)]" src={arrow} width={100} height={100} />
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+
+                
+                
+                <div className="flex m-x2 px-2">
+                  <div className="ml-3 md:ml-10">
+                  
+                  </div>
+                  <div className="ml-auto">
+                    </div>
+                  </div>
+                  <div className=" skills flex flex-wrap m-2 p-2">
+                  <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">React</span>
+                  <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">JavaScript</span>
+                  <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">MonogDB</span>
+                  <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">REST API</span>
+                  <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Node</span>
+
+                  </div>
+                </div> */}
+
+
+
+
+
+
+
+
+
+
+
+
                 <div className="work-card py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10 mt-5 ">
                 <div className="flex m-2 px-2">
                   <Image src={project1} width={200} height={100} className=" shadow-teal-400 border shadow-lg" />
+                  
+                  
                   <div className="ml-3 md:ml-10">
                   <h1>Organizo</h1>
                   <h2 className=" text-gray-400 border-gray-400  border-l-2 pl-3 mt-3">A Project Management Tool</h2>
@@ -267,6 +324,13 @@ export default function Home() {
 
                   </div>
                 </div>
+
+
+
+
+
+
+
 
 
                 {/* 
@@ -292,8 +356,8 @@ export default function Home() {
                 <div className="flex m-2 px-2">
                   <Image src={project2} width={200} height={100} />
                   <div className="ml-3 md:ml-10 ">
-                  <h1>LinkedIn Automation Script</h1>
-                  <h2 className=" text-gray-400 border-gray-400  border-l-2 pl-3 mt-3"> An Automation Script</h2></div>
+                  <h1>Automation Bot</h1>
+                  <h2 className=" text-gray-400 border-gray-400  border-l-2 pl-3 mt-3"> LinkedIn Automation.</h2></div>
                   <div className="ml-auto">
                     <a 
                     target="_blank"
@@ -305,8 +369,8 @@ export default function Home() {
 
                   <div className=" skills flex flex-wrap m-2 p-2">
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Python</span>
-                  <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">guided 40+ Grad-level students</span>
-                  <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Educational Leadership</span>
+                  <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Selenium</span>
+                  <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Web Scrapping</span>
                   </div>
                 </div>
                   
