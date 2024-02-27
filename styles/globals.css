@@ -139,14 +139,6 @@ a {
   margin: 0;
 }
 
-#glimpse{
-  background-image: url("../public/bg-teal.png");
-  background-size: contain;
-  width: 20ch;
-  height: 1.5ch;
-  z-index: 15;
-}
-
 
 
 @media screen and (min-width: 1024px) {
@@ -211,6 +203,24 @@ a {
 }
 
 
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.underline-animation::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #2CD4BF; /* Adjust color as needed */
+  margin-top: 5px; /* Adjust spacing from text */
+  animation: underline 2s ease-in-out forwards;
+}
 
 
 .social {

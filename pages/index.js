@@ -57,11 +57,11 @@ export default function Home() {
                 </div> */}
           <div className="py-10 mb-12  dark:text-white ">
    
-            <h1 className=" z-50 font-burtons text-xl pt-2 animate-slideRight  md:block">get a glimpse of sri</h1>
+            <h1 className=" z-50 font-burtons text-xl pt-2 animate-fadeIn underline-animation inline-block">get a glimpse of sri</h1>
 
                   </div>
 
-                  <div className="social  ">
+                  <div className="social animate-slideRight">
 
                       <div className="social-btn color-telegram">
                         <div className="icons8-telegram-app ml-1">
@@ -98,11 +98,11 @@ export default function Home() {
                   </div>
 
 
-          <div className="text-center p-10 py-10">
+          <div className="text-center p-10 animate-fadeIn py-10">
             <h2 className="name  text-4xl py-2 text-teal-600 font-burtons dark:text-teal-400 md:text-6xl">
               Srinivas Thiru
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+            <h3 className="text-xl py-2 dark:text-white md:text-3xl">
               A Software Engineer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
@@ -110,10 +110,10 @@ export default function Home() {
             </p>
             </div>
             <div>
-            <div className="text-5xl flex flex-wrap  justify-center gap-3 md:gap-8 lg:gap-16 py-3 text-gray-600 dark:text-gray-400">
+            <div className="text-5xl flex flex-wrap justify-center gap-3 md:gap-8 lg:gap-16 py-3 text-gray-600 dark:text-gray-400">
 
               <a 
-              className=" social-icon  hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
+              className=" social-icon animate-slideLeft hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
                 target="_blank"
                 href="https://www.linkedin.com/in/srinivas-thiru/"
               >
@@ -127,7 +127,7 @@ export default function Home() {
               </div> */}
 
               <a
-              className=" social-icon   hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
+              className=" social-icon animate-slideRight  hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
               target="_blank"
               href="https://github.com/Srinivas-Thiru/">
                 
@@ -137,7 +137,7 @@ export default function Home() {
                 </div>
               </a>
               <a
-              className=" social-icon  hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
+              className=" social-icon  animate-slideLeft hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
 
               target="_blank"
               href="https://drive.google.com/file/d/1LDZp-rTLuor-2UZVVLtbHElAqMYC2MnO/view?usp=sharing">
@@ -145,13 +145,13 @@ export default function Home() {
                 <AiFillFilePdf/>
               </a>
               <a
-              className=" social-icon  hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
+              className=" social-icon animate-slideRight  hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
               target="_blank"
               href="mailto:sri.thiru.cs@gmail.com">
                 <AiOutlineMail />
               </a>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 bitmoj-bg  rounded-full  relative overflow-hidden mt-20 ">
+            <div className=" animate-fadeIn mx-auto bg-gradient-to-b from-teal-500 bitmoj-bg  rounded-full  relative overflow-hidden mt-20 ">
               
               <Image src={deved} className=" bitmoj duration-300 ease-in" layout="fill" objectFit="cover" />
             </div>
