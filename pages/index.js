@@ -1,19 +1,12 @@
 import Head from "next/head";
 import {
-  AiFillTwitterCircle,
   AiFillLinkedin,
-  AiFillYoutube,
   AiFillGithub,
   AiFillFilePdf,
-  AiFillMail,
   AiOutlineMail,
 } from "react-icons/ai";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import deved from "../public/dev-ed-wave.png";
-import code from "../public/code.png";
-import design from "../public/design.png";
-import consulting from "../public/consulting.png";
 import Image from "next/image";
 import homeicons from "../public/homeicons.svg"
 import rec2 from "../public/rec2.png";
@@ -25,26 +18,23 @@ import arrow from "../public/arrow.png"
 import project1 from "../public/project1.png"
 import project2 from "../public/project2.png"
 import project3 from "../public/project3.png"
-import linkedinLogo from "../public/linkedin-logo.png"
-import githubLogo from "../public/github-logo.png"
-import pdfLogoLight from "../public/pdf-logo-light.png"
-import mailLogo from "../public/mail-logo.png"
-
 
 
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
 
+  
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Sri's Portfolio</title>
         <meta name="description" content="Portfolio" />
-        <link rel="icon" href="/favicon.ico" /> // gotta add the tab icon
+        <link rel="icon" href="/favicon.png" /> 
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-52">
-        <section className="min-h-screen">
+        <section className="min-h-screen z-10">
           {/* <div className="nav flex fixed rounded-full rounded-t-none  ">
                     <ul className="menu">
                       <li>  <BsFillMoonStarsFill
@@ -65,10 +55,11 @@ export default function Home() {
               </li>
                     </ul>
                 </div> */}
-          <nav className="py-10 mb-12 flex justify-between dark:text-white ">
-            <h1 className=" z-50 font-burtons text-xl pt-2 hidden md:block">get a glimpse of sri</h1>
+          <div className="py-10 mb-12  dark:text-white ">
+   
+            <h1 className=" z-50 font-burtons text-xl pt-2 animate-slideRight  md:block">get a glimpse of sri</h1>
 
-                  </nav>
+                  </div>
 
                   <div className="social  ">
 
@@ -108,7 +99,7 @@ export default function Home() {
 
 
           <div className="text-center p-10 py-10">
-            <h2 className="name text-5xl py-2 text-teal-600 font-burtons dark:text-teal-400 md:text-6xl">
+            <h2 className="name  text-5xl py-2 text-teal-600 font-burtons dark:text-teal-400 md:text-6xl">
               Srinivas Thiru
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
@@ -162,7 +153,7 @@ export default function Home() {
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 bitmoj-bg  rounded-full  relative overflow-hidden mt-20 ">
               
-              <Image src={deved} className="animate-fadeIn bitmoj duration-300 ease-in" layout="fill" objectFit="cover" />
+              <Image src={deved} className=" bitmoj duration-300 ease-in" layout="fill" objectFit="cover" />
             </div>
 
           </div>
@@ -170,20 +161,16 @@ export default function Home() {
         
         
         
+{/*------------------------------------------------------ WORK ------------------------------------------------------*/}
         
         
         
-        
-        
-        
-        
-        
-        
+      
         
               <div id="Work" className="min-h-screen pt-10">
                 
           <h1 className="font-burtons section-title text-gray-800 dark:text-gray-200 text-xl"> Work</h1>
-            <div className="work-section  flex flex-col md:flex-row text-gray-800 dark:text-gray-200 mt-[6vh]" >
+            <div className="work-section  flex flex-col md:flex-row text-gray-800 dark:text-gray-200 mt-2" >
 
               <div className="image my-auto">
               <Image className="mx-auto" src={homeicons} width={500} height={500}  />
@@ -234,7 +221,7 @@ export default function Home() {
 
 
 
-
+{/*------------------------------------------------------ PROJECTS ------------------------------------------------------*/}
 
 
               
@@ -242,6 +229,7 @@ export default function Home() {
               <h1 className="font-burtons section-title  text-gray-800 dark:text-gray-200 text-xl ">Thigns I've developed</h1>
               
               <div className="content p-0 md:flex-row my-auto md:ml-0 w-90md:w-[60vw] ">
+
 
 {/* 
               <div className="work-card py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10 mt-5 ">
@@ -266,8 +254,6 @@ export default function Home() {
                   </div>
 
                 </div>
-
-                
                 
                 <div className="flex m-x2 px-2">
                   <div className="ml-3 md:ml-10">
@@ -287,17 +273,7 @@ export default function Home() {
                 </div> */}
 
 
-
-
-
-
-
-
-
-
-
-
-                <div className="work-card py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10 mt-5 ">
+                <div className="work-card animate-slideRight py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10 mt-5 ">
                 <div className="flex m-2 px-2">
                   <Image src={project1} width={200} height={100} className=" shadow-teal-400 border shadow-lg" />
                   
@@ -326,31 +302,6 @@ export default function Home() {
                 </div>
 
 
-
-
-
-
-
-
-
-                {/* 
-                <div className="work-card py-2 border-b-2 border-gray-300 hover:scale-105 duration-300 ease-in-out hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none my-4 ">
-    <div className="flex flex-col m-2 px-2"> <!-- Change flex to flex-col -->
-        <Image className="rounded-lg" src={work1} width={150} height={150} />
-        <div className="ml-0 mt-2"> <!-- Adjust margin -->
-            <h1>Software Engineer</h1>
-            <h2 className="text-gray-400 border-gray-400 border-l-2 pl-3 mt-3">Influexer</h2>
-        </div>
-        <div className="flex flex-wrap m-2 p-2 justify-center"> <!-- Add justify-center to center content -->
-            <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">NextJs</span>
-            <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">TypeScript</span>
-            <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">PostgreSQL</span>
-            <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">GraphQL</span>
-            <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">React</span>
-        </div>
-    </div>
-</div>
- */}
 
                 <div className="work-card py-2 border-b-2 border-gray-300  hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10 my-5 ">
                 <div className="flex m-2 px-2">
@@ -401,6 +352,10 @@ export default function Home() {
 
 
 
+
+{/*------------------------------------------------------ RECOMMENDATIONS ------------------------------------------------------*/}
+
+
               <section>
                 <div className="section-title"></div>
 
@@ -423,6 +378,9 @@ export default function Home() {
               </div>
 
 
+{/*------------------------------------------------------ CODEPENS ------------------------------------------------------*/}
+
+
 
 {/* 
               <div id="codepen">
@@ -434,6 +392,11 @@ export default function Home() {
                 <Image src={design} height={400} width={400} className=" bg-teal-200 rounded-lg" />
                 </div>
               </div> */}
+
+
+
+{/*------------------------------------------------------ CONTACT ------------------------------------------------------*/}
+
 
 
               <div id="contact" className=" text-gray-800 dark:text-gray-200 ">

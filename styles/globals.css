@@ -139,6 +139,13 @@ a {
   margin: 0;
 }
 
+#glimpse{
+  background-image: url("../public/bg-teal.png");
+  background-size: contain;
+  width: 20ch;
+  height: 1.5ch;
+  z-index: 15;
+}
 
 
 
