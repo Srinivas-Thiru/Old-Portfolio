@@ -159,7 +159,7 @@ export default function Home() {
             <div className="text-5xl flex flex-wrap justify-center gap-3 md:gap-8 lg:gap-16 py-3 text-gray-600 dark:text-gray-400">
 
               <a 
-              className=" social-icon animate-slideLeft hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
+              className=" social-icon animate-slideLeft hover:scale-105  duration-300 ease-in-out hover:drop-shadow-[0_8px_10px_rgba(12,148,136,1)]"
                 target="_blank"
                 href="https://www.linkedin.com/in/srinivas-thiru/"
               >
@@ -215,7 +215,7 @@ export default function Home() {
         
               <div id="Work" className="min-h-screen ">
                 
-          <h1 className="font-burtons section-title text-gray-800 dark:text-gray-200 text-xl"> Work</h1>
+          <h1 className={`font-burtons section-title text-gray-800 dark:text-gray-200 text-xl ${isVisibleWork && "underline-animation"}`}> Work</h1>
             <div className={`work-section overflow-hidden flex flex-col md:flex-row text-gray-800 dark:text-gray-200 mt-2`} >
 
               <div className="image my-auto">
@@ -272,7 +272,7 @@ export default function Home() {
 
               
             <div id="Projects" className="min-h-screen pt-10 text-gray-800 dark:text-gray-200">
-              <h1 className="font-burtons section-title mb-4  text-gray-800 dark:text-gray-200 text-xl ">Thigns I've developed</h1>
+              <h1 className={`font-burtons section-title mb-4  text-gray-800 dark:text-gray-200 text-xl ${isVisible && "underline-animation"}`}>Thigns I've developed</h1>
               
               <div className="content overflow-hidden p-0 md:flex-row my-auto md:ml-0 w-90md:w-[60vw] ">
 
@@ -417,10 +417,9 @@ export default function Home() {
 
 
               <section>
-                <div className="section-title"></div>
 
               <div id="Recommendations" className=" pt-5">
-              <h1 className="font-burtons section-title text-gray-800 dark:text-gray-200 text-xl my-5">Hear it from them</h1>
+              <h1 className={`font-burtons section-title text-gray-800 dark:text-gray-200 text-xl my-5 ${isVisible && "underline-animation"}`}>Hear it from them</h1>
                 <div className="flex flex-col lg:flex-row gap-4 mx-auto justify-between my-6 py-6 ">
                 <a 
                 className=" hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg"
