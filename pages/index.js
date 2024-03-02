@@ -383,7 +383,7 @@ export default function Home() {
                 </div>
                 </div>
 
-                <div className={`container ${isVisible ? ' opacity-100 animate-slideRight' : ' opacity-0'}`}>
+                <div className={`container pb-10 ${isVisible ? ' opacity-100 animate-slideRight' : ' opacity-0'}`}>
                 <div className="work-card py-2 border-b-2 border-gray-300  hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none mx-3 md:mx-10  ">
                 <div className="flex m-2 px-2">
                   <Image src={project3} width={200} height={100} />
