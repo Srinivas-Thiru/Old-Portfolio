@@ -238,7 +238,7 @@ export default function Home() {
 
                   </div>
                 </div>
-                <div className="content">
+                <div className="content hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 ">
                 <div className={`work-card py-2 ${isVisibleWork ? " duration-1000 opacity-100 animate-slideLeft" : "opacity-0"} border-b-2 border-gray-300  hover:scale-105 duration-300 ease-in-out  hover:shadow-teal-200 shadow-lg rounded-lg rounded-r-none my-4 mt-14` }>
                 <div className="flex m-2 px-2">
                 <Image className="rounded-lg" src={work2} width={150} height={150} />
