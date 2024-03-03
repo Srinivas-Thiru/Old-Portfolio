@@ -4,6 +4,9 @@ import {
   AiFillGithub,
   AiFillFilePdf,
   AiOutlineMail,
+  AiFillLayout,
+  AiOutlineLoading,
+  AiOutlineLayout,
 } from "react-icons/ai";
 import { useState } from "react";
 import deved from "../public/dev-ed-wave.png";
@@ -95,11 +98,10 @@ export default function Home() {
               </li>
                     </ul>
                 </div> */}
-          <div className="py-10 mb-12  dark:text-white ">
-   
+          <div className="py-10 mb-12 flex justify-between dark:text-white ">
             <h1 className=" z-50 font-burtons text-xl pt-2 animate-fadeIn underline-animation inline-block">get a glimpse of sri</h1>
-
-                  </div>
+            <button className=" change-btn"><a className="" href="https://srinivas-thiru.github.io/theme-2"> <AiOutlineLayout className=" inline-block mb-1" />   </a></button>
+          </div>
 
                   <div className="social animate-slideRight">
 
