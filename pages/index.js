@@ -100,7 +100,7 @@ export default function Home() {
                 </div> */}
           <div className="py-10 mb-12 flex justify-between dark:text-white ">
             <h1 className=" z-50 font-burtons text-xl pt-2 animate-fadeIn underline-animation inline-block">get a glimpse of sri</h1>
-            <button className=" change-btn"><a className="" href="https://srinivas-thiru.github.io/theme-2"> <AiOutlineLayout className=" inline-block mb-1" />   </a></button>
+            <a className="" href="https://srinivas-thiru.github.io/theme-2"><button className=" change-btn"> <AiOutlineLayout className=" inline-block mb-1" />  </button> </a>
           </div>
 
                   <div className="social animate-slideRight">
