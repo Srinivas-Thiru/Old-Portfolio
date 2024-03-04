@@ -251,7 +251,7 @@ export default function Home() {
                   </div>
                   <div className=" skills flex flex-wrap m-2 p-2">
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Python</span>
-                  <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">guided 40+ Grad-level students</span>
+                  <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Guided 40+ Grad-level students</span>
                   <span className="m-1 text-xs border border-gray-300 shadow-md p-1 rounded-full">Educational Leadership</span>
                   </div>
                 </div>
