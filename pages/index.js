@@ -78,7 +78,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" /> 
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-52">
-      // <SpeedInsights/>
         <section className="min-h-screen z-10">
      
           {/* <div className="nav flex fixed rounded-full rounded-t-none  ">
