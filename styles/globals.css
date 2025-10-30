@@ -383,9 +383,9 @@ width: auto;
     flex-wrap: wrap;
   }
 
-  .work-card {
-      width: 93%; 
-      margin: 3.5%;
+  .work-card .image-container {
+      /* Optional: Adjust image width, height, or margin as needed for mobile */
+      width: 100%; /* Example: Scale image to full width */
   }
 }
 
